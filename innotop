@@ -2498,7 +2498,7 @@ my %tbl_meta = (
       cols => {
         cxn                    => { src => 'cxn' },
         waiting_thread         => { src => 'waiting_thread' },
-        waiting_query          => { src => 'waiting_query', trans => [qw(distill)] },
+        waiting_query          => { src => 'waiting_query' },
         waiting_rows_modified  => { src => 'waiting_rows_modified' },
         waiting_age            => { src => 'waiting_age', trans => [qw(fuzzy_time)] },
         waiting_wait_secs      => { src => 'waiting_wait_secs', trans => [qw(fuzzy_time)] },
@@ -2506,7 +2506,7 @@ my %tbl_meta = (
         waiting_host           => { src => 'waiting_host' },
         waiting_db             => { src => 'waiting_db' },
         blocking_thread        => { src => 'blocking_thread' },
-        blocking_query         => { src => 'blocking_query', trans => [qw(distill)] },
+        blocking_query         => { src => 'blocking_query' },
         blocking_rows_modified => { src => 'blocking_rows_modified' },
         blocking_age           => { src => 'blocking_age', trans => [qw(fuzzy_time)] },
         blocking_wait_secs     => { src => 'blocking_wait_secs', trans => [qw(fuzzy_time)] },
